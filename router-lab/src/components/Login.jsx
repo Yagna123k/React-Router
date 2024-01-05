@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { UserContext } from './context/AuthContext'
 
 const Login = () => {
-    const {setIsLogin} = useContext(useContext)
+    const {setIsLogin} = useContext(UserContext)
   return (
     <div>
       <button onClick={setIsLogin(true)}>SignIn</button>
